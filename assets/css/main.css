@@ -8,6 +8,7 @@ html {
 }
 
 body {
+  background-color: #d4ebd5;
 
 }
 
@@ -133,9 +134,6 @@ li{
     margin-top: 20px;
 }
 
-.carousel-indicators .indicator-item {
-    background-color: #1565c0; /* Color of the indicator */
-  }
 
 
 /* NAV #################################################################################################### */
@@ -175,7 +173,7 @@ ul#nav-mobile.right.hide-on-med-and-down{
 }
 
 .sidenav a:hover {
-  background-color: #81C784; /* A darker green for hover states; adjust the hex as needed */
+  background-color: #96c199; /* A darker green for hover states; adjust the hex as needed */
 }
 
 /* Custom styles for search and cart icons to match the theme */
@@ -193,9 +191,21 @@ ul#nav-mobile.right.hide-on-med-and-down{
 
 
   .custom-title {
-    font-size: 2.5rem; 
+    font-size: clamp(4.5rem, 5vw, 6rem);
   }
 
+  .carousel-item {
+    background-size: cover;
+    background-position: center;
+  }
 
+  .carousel-indicators .indicator-item {
+    background-color: #1565c0; /* Color of the indicator */
+  }
 
-  /*  */
+  .category-card {
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Adjust text color for better visibility if needed */
+    border-radius: 15px;
+  }
