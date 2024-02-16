@@ -28,6 +28,7 @@ li{
 .header {
   font-size: clamp(2.5rem, 5vw, 3.5rem);
   font-family: "Bebas Neue", sans-serif;
+  margin-top: 2vh;
 }
 
 .header2{
@@ -162,10 +163,8 @@ li{
 
 /* NAV #################################################################################################### */
 
-div.col.s12{
-    margin-top: 10px;
 
-}
+
 
 ul#nav-mobile.right.hide-on-med-and-down{
     display: flex;
@@ -179,14 +178,9 @@ ul#nav-mobile.right.hide-on-med-and-down{
 
 /* Logo and link colors */
 .nav-wrapper .brand-logo, .nav-wrapper a {
-  color: #ffffff; /* White text for contrast */
+  color: #ffffff; 
 }
 
-/* Link hover and active styles */
-.nav-wrapper a:hover, .nav-wrapper a.active {
-  background-color: #81C784; /* A darker green for hover/active states; adjust the hex as needed */
-  /* padding: 10px; */
-}
 
 /* Mobile sidenav styling */
 .sidenav {
@@ -210,6 +204,17 @@ ul#nav-mobile.right.hide-on-med-and-down{
     color: #c9ffcd; /* Darker green for icons */
   }
 
+  @media only screen and (max-width: 992px) {
+    .nav-wrapper .brand-logo {
+      left: 0;
+      transform: none;
+      position: relative; /* Adjust as needed for your layout */
+    }
+    .sidenav-trigger {
+      margin-left: auto; /* Push the menu icon to the right */
+    }
+  }
+  
 
 
   /* Homepage #######################################################################3 */
