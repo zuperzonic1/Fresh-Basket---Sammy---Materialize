@@ -248,4 +248,15 @@ ul#nav-mobile.right.hide-on-med-and-down{
     border: 1px solid #ccc;
     border-radius: 2px;
   }
+
+
+  /* Cart page ############################################################################################################################## */
+
+
+  .header-col {
+    font-weight: bold;
+    color: #333; 
+}
+
+
   

@@ -531,57 +531,140 @@
 
     <section class="cart-page cart hide-all">
       <div class="container cart-container">
-        <div class="cart-header">
-            YOUR CART
-        </div>
-    
-        <!-- Repeat this div for each product in the cart -->
-        <div class="cart-row">
-            <div>1</div>
-            <div>Fruit Juice Cocktail, Watermelon</div>
-            <div class="quantity-selector">
-                <i class="material-icons">remove</i>
-                <input type="text" value="1">
-                <i class="material-icons">add</i>
-            </div>
-            <div>$1.99</div>
-            <div><i class="material-icons">close</i></div>
-        </div>
-        <div class="cart-row">
-          <div>1</div>
-          <div>Fruit Juice Cocktail, Watermelon</div>
-          <div class="quantity-selector">
-              <i class="material-icons">remove</i>
-              <input type="text" value="1">
-              <i class="material-icons">add</i>
-          </div>
-          <div>$1.99</div>
-          <div><i class="material-icons">close</i></div>
+        <h5 class="cart-header center-align">YOUR CART</h5>
+
+        <div class="row">
+          <div class="col s2 m1 center-align"><h6 class="header-col">Qty</h6></div>
+          <div class="col s4 m3"><h6 class="header-col">Product</h6></div>
+          <div class="col s3 m3 center-align"><h6 class="header-col">Quantity</h6></div>
+          <div class="col s1 m2 center-align"><h6 class="header-col">Price</h6></div>
+          <div class="col s2 m2 center-align"><h6 class="header-col">Ext. Price</h6></div>
+          <div class="col s1 center-align"><h6 class="header-col">Remove</h6></div>
       </div>
-      <div class="cart-row">
-        <div>1</div>
-        <div>Fruit Juice Cocktail, Watermelon</div>
-        <div class="quantity-selector">
-            <i class="material-icons">remove</i>
-            <input type="text" value="1">
-            <i class="material-icons">add</i>
+        
+        <!-- Repeat this div for each product in the cart -->
+        <div class="row cart-row">
+          <div class="col s2 m1 center-align">
+            <span class="cart-quantity">1</span>
+          </div>
+          <div class="col s4 m3">
+            <span class="cart-item-name">Fruit Juice Cocktail, Watermelon</span>
+          </div>
+          <div class="col s3 m3 center-align">
+            <button class="btn-flat waves-effect">
+              <i class="material-icons">remove</i>
+            </button>
+            <input type="text" value="1" class="center-align" style="width: 50px; border: none; margin: 0 10px;">
+            <button class="btn-flat waves-effect">
+              <i class="material-icons">add</i>
+            </button>
+          </div>
+          <div class="col s1 m2 center-align">
+            <span class="cart-item-price">$1.99</span>
+          </div>
+          <!-- Extended Price Column -->
+          <div class="col s2 m2 center-align">
+            <span class="cart-item-ext-price">$1.99</span>
+          </div>
+          <div class="col s1 center-align">
+            <button class="btn-flat waves-effect">
+              <i class="material-icons">close</i>
+            </button>
+          </div>
         </div>
-        <div>$1.99</div>
-        <div><i class="material-icons">close</i></div>
-    </div>
-    
-        <div class="total-line">
+        <div class="row cart-row">
+          <div class="col s2 m1 center-align">
+            <span class="cart-quantity">2</span>
+          </div>
+          <div class="col s4 m3">
+            <span class="cart-item-name">Fruit Juice Cocktail, Watermelon</span>
+          </div>
+          <div class="col s3 m3 center-align">
+            <button class="btn-flat waves-effect">
+              <i class="material-icons">remove</i>
+            </button>
+            <input type="text" value="1" class="center-align" style="width: 50px; border: none; margin: 0 10px;">
+            <button class="btn-flat waves-effect">
+              <i class="material-icons">add</i>
+            </button>
+          </div>
+          <div class="col s1 m2 center-align">
+            <span class="cart-item-price">$1.99</span>
+          </div>
+          <!-- Extended Price Column -->
+          <div class="col s2 m2 center-align">
+            <span class="cart-item-ext-price">$1.99</span>
+          </div>
+          <div class="col s1 center-align">
+            <button class="btn-flat waves-effect">
+              <i class="material-icons">close</i>
+            </button>
+          </div>
+        </div>
+
+        <div class="row cart-row">
+          <div class="col s2 m1 center-align">
+            <span class="cart-quantity">3</span>
+          </div>
+          <div class="col s4 m3">
+            <span class="cart-item-name">Fruit Juice Cocktail, Watermelon</span>
+          </div>
+          <div class="col s3 m3 center-align">
+            <button class="btn-flat waves-effect">
+              <i class="material-icons">remove</i>
+            </button>
+            <input type="text" value="1" class="center-align" style="width: 50px; border: none; margin: 0 10px;">
+            <button class="btn-flat waves-effect">
+              <i class="material-icons">add</i>
+            </button>
+          </div>
+          <div class="col s1 m2 center-align">
+            <span class="cart-item-price">$1.99</span>
+          </div>
+          <!-- Extended Price Column -->
+          <div class="col s2 m2 center-align">
+            <span class="cart-item-ext-price">$1.99</span>
+          </div>
+          <div class="col s1 center-align">
+            <button class="btn-flat waves-effect">
+              <i class="material-icons">close</i>
+            </button>
+          </div>
+        </div>
+        
+        <!-- Repeat above div for other items -->
+      
+        <div class="row total-line">
+          <div class="col s6 right-align">
             <span>Subtotal:</span>
+          </div>
+          <div class="col s6 left-align">
             <strong>$7.96</strong>
+          </div>
         </div>
-        <div class="total-line">
+        <div class="row total-line">
+          <div class="col s6 right-align">
             <span>TAX:</span>
+          </div>
+          <div class="col s6 left-align">
             <strong>$0.96</strong>
+          </div>
         </div>
-        <div class="total-line">
+        <div class="row total-line">
+          <div class="col s6 right-align">
             <span>Total:</span>
+          </div>
+          <div class="col s6 left-align">
             <strong>$8.92</strong>
+          </div>
         </div>
+        <div class="row">
+          <div class="col s12 center-align">
+            <button class="btn waves-effect light-green">CHECKOUT</button>
+          </div>
+        </div>
+      </div>
+      
     </section>
 
 
