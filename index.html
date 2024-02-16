@@ -8,6 +8,9 @@
   <title>Box Site</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
 </head>
@@ -21,12 +24,12 @@
           <div class="col s12">
             <a href="#/home/" class="brand-logo">LOGO</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a href="#" class="department-link">Products</a></li>
-              <li><a href="#" class="location-link">Location</a></li>
-              <li><a href="#" class="createaccount-link">Sign Up</a></li>
-              <li><a href="#" class="login-link">Log In</a></li>
-              <li><a href="#" class="search-link"><i class="material-icons">search</i></a></li>
-              <li><a href="#" class="cart-link"><i class="material-icons">shopping_cart</i></a></li>
+              <li><a href="#" class="department-link subheader">Products</a></li>
+              <li><a href="#" class="location-link subheader">Location</a></li>
+              <li><a href="#" class="createaccount-link subheader">Sign Up</a></li>
+              <li><a href="#" class="login-link subheader">Log In</a></li>
+              <li><a href="#" class="search-link subheader"><i class="material-icons">search</i></a></li>
+              <li><a href="#" class="cart-link subheader"><i class="material-icons">shopping_cart</i></a></li>
             </ul>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
           </div>
@@ -52,7 +55,7 @@
 
   <main>
     <section class="search-page search hide-all">
-      <h1>Search</h1>
+      <h1 class="header">Search</h1>
     </section>
 
     <!-- Home Page -->
@@ -79,52 +82,52 @@
         
 
     <div class="section container">
-      <h3 class="header center-align flow-text">Categories</h3>
+      <h3 class="header center-align flow-text mt-3">Categories</h3>
       <div class="row">
         <div class="col s12 m6 l4 xl3">
-          <div class="card category-card darken-1 department-link cursor"
+          <div class="card category-card darken-1 department-link header2 cursor"
            style="background-image: url('/assets/images/deli.png');">
            Deli
           </div>
         </div>
         <div class="col s12 m6 l4 xl3">
-          <div class="card category-card darken-1 department-link cursor" 
+          <div class="card category-card darken-1 department-link header2 cursor" 
             style="background-image: url('/assets/images/produce.png');">
               Produce
           </div>
         </div>
         <div class="col s12 m6 l4 xl3">
-          <div class="card category-card darken-1 department-link cursor" 
+          <div class="card category-card darken-1 department-link header2 cursor" 
           style="background-image: url('/assets/images/dairy.png');">
             Dairy
           </div>
         </div>
         <div class="col s12 m6 l4 xl3">
-          <div class="card category-card darken-1 department-link cursor" 
+          <div class="card category-card darken-1 department-link header2 cursor" 
           style="background-image: url('/assets/images/bakery.png');">
             Bakery
           </div>
         </div>
         <div class="col s12 m6 l4 xl3">
-          <div class="card category-card darken-1 department-link cursor" 
+          <div class="card category-card darken-1 department-link header2 cursor" 
           style="background-image: url('/assets/images/snacks.png');">
             Snacks
           </div>
         </div>
         <div class="col s12 m6 l4 xl3">
-          <div class="card category-card darken-1 department-link cursor" 
+          <div class="card category-card darken-1 department-link header2 cursor" 
           style="background-image: url('/assets/images/frozen.png');">
             Frozen
           </div>
         </div>
         <div class="col s12 m6 l4 xl3">
-          <div class="card category-card darken-1 department-link cursor" 
+          <div class="card category-card darken-1 department-link header2 cursor" 
           style="background-image: url('/assets/images/meat.png');">
             Meat
           </div>
         </div>
         <div class="col s12 m6 l4 xl3">
-          <div class="card category-card darken-1 department-link cursor" 
+          <div class="card category-card darken-1 department-link header2 cursor" 
           style="background-image: url('/assets/images/seafood.png');">
             Seafood
           </div>
@@ -142,99 +145,174 @@
     <!-- department Page -->
     <section class="department department-page hide-all">
       <div class="container">
-        <h4 class="header center-align">DRINKS</h4>
+        <h4 class="header center-align">DEPARTMENT NAME</h4>
         <div class="row">
-          <!-- Repeat this block for each product -->
-          <div class="col s12 m6 l4 xl3 product-link cursor">
+   
+
+          <div class="col s12 m6 l4 xl3">
             <div class="card product-card">
-              <div class="product-image">
-                Placeholder
+              <div class="card-image product-link cursor">
+                <img src="/assets/images/prod1.jpg" alt="Arizona Fruit Juice">
               </div>
-              <p class="product-name">Arizona Fruit Juice</p>
-              <p class="product-price">$2.99</p>
-              <a class="waves-effect waves-light btn-small">Add to Cart</a>
+              <div class="card-content">
+                <span class="product-name product-link cursor">Arizona Fruit Juice</span>
+                <p class="product-price product-link cursor">$2.99</p>
+                <!-- Quantity Selector -->
+                <div class="quantity-selector">
+                  <a class="waves-effect light-green darken-3 btn-small quantity-decrease">-</a>
+                  <input type="text" class="quantity-input" value="1" readonly>
+                  <a class="waves-effect light-green darken-3 btn-small quantity-increase">+</a>
+                </div>
+              </div>
+              <div class="card-action">
+                <a class="waves-effect light-green btn-small">Add to Cart</a>
+              </div>
             </div>
           </div>
-          <div class="col s12 m6 l4 xl3 product-link cursor">
+          <div class="col s12 m6 l4 xl3">
             <div class="card product-card">
-              <div class="product-image">
-                Placeholder
+              <div class="card-image product-link cursor">
+                <img src="/assets/images/prod2.jpg" alt="Arizona Fruit Juice">
               </div>
-              <p class="product-name">Arizona Fruit Juice</p>
-              <p class="product-price">$2.99</p>
-              <a class="waves-effect waves-light btn-small">Add to Cart</a>
+              <div class="card-content">
+                <span class="product-name product-link cursor">Arizona Fruit Juice</span>
+                <p class="product-price product-link cursor">$2.99</p>
+                <!-- Quantity Selector -->
+                <div class="quantity-selector">
+                  <a class="waves-effect light-green darken-3 btn-small quantity-decrease">-</a>
+                  <input type="text" class="quantity-input" value="1" readonly>
+                  <a class="waves-effect light-green darken-3 btn-small quantity-increase">+</a>
+                </div>
+              </div>
+              <div class="card-action">
+                <a class="waves-effect light-green btn-small">Add to Cart</a>
+              </div>
             </div>
-          </div>
-          <div class="col s12 m6 l4 xl3 product-link cursor">
+          </div>    
+          <div class="col s12 m6 l4 xl3">
             <div class="card product-card">
-              <div class="product-image">
-                Placeholder
+              <div class="card-image product-link cursor">
+                <img src="/assets/images/prod3.jpg" alt="Arizona Fruit Juice">
               </div>
-              <p class="product-name">Arizona Fruit Juice</p>
-              <p class="product-price">$2.99</p>
-              <a class="waves-effect waves-light btn-small">Add to Cart</a>
+              <div class="card-content">
+                <span class="product-name product-link cursor">Arizona Fruit Juice</span>
+                <p class="product-price product-link cursor">$2.99</p>
+                <!-- Quantity Selector -->
+                <div class="quantity-selector">
+                  <a class="waves-effect light-green darken-3 btn-small quantity-decrease">-</a>
+                  <input type="text" class="quantity-input" value="1" readonly>
+                  <a class="waves-effect light-green darken-3 btn-small quantity-increase">+</a>
+                </div>
+              </div>
+              <div class="card-action">
+                <a class="waves-effect light-green btn-small">Add to Cart</a>
+              </div>
             </div>
-          </div>
-          <div class="col s12 m6 l4 xl3 product-link cursor">
+          </div>    
+          <div class="col s12 m6 l4 xl3">
             <div class="card product-card">
-              <div class="product-image">
-                Placeholder
+              <div class="card-image product-link cursor">
+                <img src="/assets/images/prod4.jpg" alt="Arizona Fruit Juice">
               </div>
-              <p class="product-name">Arizona Fruit Juice</p>
-              <p class="product-price">$2.99</p>
-              <a class="waves-effect waves-light btn-small">Add to Cart</a>
+              <div class="card-content">
+                <span class="product-name product-link cursor">Arizona Fruit Juice</span>
+                <p class="product-price product-link cursor">$2.99</p>
+                <!-- Quantity Selector -->
+                <div class="quantity-selector">
+                  <a class="waves-effect light-green darken-3 btn-small quantity-decrease">-</a>
+                  <input type="text" class="quantity-input" value="1" readonly>
+                  <a class="waves-effect light-green darken-3 btn-small quantity-increase">+</a>
+                </div>
+              </div>
+              <div class="card-action">
+                <a class="waves-effect light-green btn-small">Add to Cart</a>
+              </div>
             </div>
-          </div>
-          <div class="col s12 m6 l4 xl3 product-link cursor">
+          </div>    
+          <div class="col s12 m6 l4 xl3">
             <div class="card product-card">
-              <div class="product-image">
-                Placeholder
+              <div class="card-image product-link cursor">
+                <img src="/assets/images/prod5.jpg" alt="Arizona Fruit Juice">
               </div>
-              <p class="product-name">Arizona Fruit Juice</p>
-              <p class="product-price">$2.99</p>
-              <a class="waves-effect waves-light btn-small">Add to Cart</a>
+              <div class="card-content">
+                <span class="product-name product-link cursor">Arizona Fruit Juice</span>
+                <p class="product-price product-link cursor">$2.99</p>
+                <!-- Quantity Selector -->
+                <div class="quantity-selector">
+                  <a class="waves-effect light-green darken-3 btn-small quantity-decrease">-</a>
+                  <input type="text" class="quantity-input" value="1" readonly>
+                  <a class="waves-effect light-green darken-3 btn-small quantity-increase">+</a>
+                </div>
+              </div>
+              <div class="card-action">
+                <a class="waves-effect light-green btn-small">Add to Cart</a>
+              </div>
             </div>
-          </div>
-          <div class="col s12 m6 l4 xl3 product-link cursor">
+          </div>    
+          <div class="col s12 m6 l4 xl3">
             <div class="card product-card">
-              <div class="product-image">
-                Placeholder
+              <div class="card-image product-link cursor">
+                <img src="/assets/images/prod6.jpg" alt="Arizona Fruit Juice">
               </div>
-              <p class="product-name">Arizona Fruit Juice</p>
-              <p class="product-price">$2.99</p>
-              <a class="waves-effect waves-light btn-small">Add to Cart</a>
+              <div class="card-content">
+                <span class="product-name product-link cursor">Arizona Fruit Juice</span>
+                <p class="product-price product-link cursor">$2.99</p>
+                <!-- Quantity Selector -->
+                <div class="quantity-selector">
+                  <a class="waves-effect light-green darken-3 btn-small quantity-decrease">-</a>
+                  <input type="text" class="quantity-input" value="1" readonly>
+                  <a class="waves-effect light-green darken-3 btn-small quantity-increase">+</a>
+                </div>
+              </div>
+              <div class="card-action">
+                <a class="waves-effect light-green btn-small">Add to Cart</a>
+              </div>
             </div>
-          </div>
-          <div class="col s12 m6 l4 xl3 product-link cursor">
+          </div>    
+          <div class="col s12 m6 l4 xl3">
             <div class="card product-card">
-              <div class="product-image">
-                Placeholder
+              <div class="card-image product-link cursor">
+                <img src="/assets/images/prod7.jpg" alt="Arizona Fruit Juice">
               </div>
-              <p class="product-name">Arizona Fruit Juice</p>
-              <p class="product-price">$2.99</p>
-              <a class="waves-effect waves-light btn-small">Add to Cart</a>
+              <div class="card-content">
+                <span class="product-name product-link cursor">Arizona Fruit Juice</span>
+                <p class="product-price product-link cursor">$2.99</p>
+                <!-- Quantity Selector -->
+                <div class="quantity-selector">
+                  <a class="waves-effect light-green darken-3 btn-small quantity-decrease">-</a>
+                  <input type="text" class="quantity-input" value="1" readonly>
+                  <a class="waves-effect light-green darken-3 btn-small quantity-increase">+</a>
+                </div>
+              </div>
+              <div class="card-action">
+                <a class="waves-effect light-green btn-small">Add to Cart</a>
+              </div>
             </div>
-          </div>
-          <div class="col s12 m6 l4 xl3 product-link cursor">
+          </div>    
+          <div class="col s12 m6 l4 xl3">
             <div class="card product-card">
-              <div class="product-image">
-                Placeholder
+              <div class="card-image product-link cursor">
+                <img src="/assets/images/prod8.jpg" alt="Arizona Fruit Juice">
               </div>
-              <p class="product-name">Arizona Fruit Juice</p>
-              <p class="product-price">$2.99</p>
-              <a class="waves-effect waves-light btn-small">Add to Cart</a>
-            </div>
-          </div>
-          <div class="col s12 m6 l4 xl3 product-link cursor">
-            <div class="card product-card">
-              <div class="product-image">
-                Placeholder
+              <div class="card-content">
+                <span class="product-name product-link cursor">Arizona Fruit Juice</span>
+                <p class="product-price product-link cursor">$2.99</p>
+                <!-- Quantity Selector -->
+                <div class="quantity-selector">
+                  <a class="waves-effect light-green darken-3 btn-small quantity-decrease">-</a>
+                  <input type="text" class="quantity-input" value="1" readonly>
+                  <a class="waves-effect light-green darken-3 btn-small quantity-increase">+</a>
+                </div>
               </div>
-              <p class="product-name">Arizona Fruit Juice</p>
-              <p class="product-price">$2.99</p>
-              <a class="waves-effect waves-light btn-small">Add to Cart</a>
+              <div class="card-action">
+                <a class="waves-effect light-green btn-small">Add to Cart</a>
+              </div>
             </div>
-          </div>
+          </div>    
+          
+          
+          
+          
 
         </div>
       </div>
@@ -244,12 +322,12 @@
       <div class="container">
         <!-- Main Product Detail -->
         <div class="row">
-          <div class="col s12 m6">
+          <div class="col s12 m7">
             <!-- Product Image -->
-            <img class="responsive-img" src="https://placehold.co/600x400" alt="Product Image">
+            <img class="responsive-img" src="/assets/images/prod7.jpg" alt="Product Image" style="width: 100%;">
           </div>
-          <div class="col s12 m6">
-            <h5>Fruit Juice Cocktail, Watermelon</h5>
+          <div class="col s12 m5">
+            <h5 class="header">Fruit Juice Cocktail, Watermelon</h5>
             <p>Brand: Arizona</p>
             <p>Info: Vitamin C Fortified. Vitamin C is... No artificial flavor. No preservatives. Arizona - an American company.</p>
             <p>Price: $1.99 / Each</p>
@@ -259,122 +337,184 @@
                 <label for="quantity">Quantity</label>
               </div>
             </div>
-            <a class="waves-effect waves-light  btn">Add to Cart</a>
+            <a class="waves-effect waves-light light-green btn">Add to Cart</a>
           </div>
         </div>
+        
       
         <!-- Other Items Carousel -->
-        <h5>Related Items</h5>
-        <div class="container">
-          <!-- Custom Carousel Controls -->
-          <!-- <div class="row">
-            <div class="col s12 center">
-              <button class="btn-small move-left"><i class="material-icons">chevron_left</i></button>
-              <button class="btn-small move-right"><i class="material-icons">chevron_right</i></button>
-            </div>
-          </div>
-         -->
-          <!-- Custom Carousel -->
+        <h5 class="header">Related Items</h5>
+        <!-- <div class="container"> -->
           <div class="row">
-            <div class="col s12">
-              <div id="custom-carousel" class="carousel-custom">
-                <!-- Repeat this div for each set of 5 items -->
-                <div class="carousel-set">
-                  <div class="col s2">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="https://placehold.co/600x400" alt="Product">
-                      </div>
-                      <div class="card-content">
-                        <p>Arizona Fruit Juice</p>
-                        <p>$2.99</p>
-                      </div>
-                    </div>
-                  </div>                  
-                  <!-- Repeat for 5 items in a set -->
+            <div class="col s12 m6 l4 xl3">
+              <div class="card product-card">
+                <div class="card-image product-link cursor">
+                  <img src="/assets/images/prod1.jpg" alt="Arizona Fruit Juice">
                 </div>
-                <div class="carousel-set">
-                  <div class="col s2">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="https://placehold.co/600x400" alt="Product">
-                      </div>
-                      <div class="card-content">
-                        <p>Arizona Fruit Juice</p>
-                        <p>$2.99</p>
-                      </div>
-                    </div>
-                  </div>                  
-                  <!-- Repeat for 5 items in a set -->
+                <div class="card-content">
+                  <span class="product-name product-link cursor">Arizona Fruit Juice</span>
+                  <p class="product-price product-link cursor">$2.99</p>
+                  <!-- Quantity Selector -->
+                  <div class="quantity-selector">
+                    <a class="waves-effect light-green darken-3 btn-small quantity-decrease">-</a>
+                    <input type="text" class="quantity-input" value="1" readonly>
+                    <a class="waves-effect light-green darken-3 btn-small quantity-increase">+</a>
+                  </div>
                 </div>
-                <div class="carousel-set">
-                  <div class="col s2">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="https://placehold.co/600x400" alt="Product">
-                      </div>
-                      <div class="card-content">
-                        <p>Arizona Fruit Juice</p>
-                        <p>$2.99</p>
-                      </div>
-                    </div>
-                  </div>                  
-                  <!-- Repeat for 5 items in a set -->
+                <div class="card-action">
+                  <a class="waves-effect light-green btn-small">Add to Cart</a>
                 </div>
-                <div class="carousel-set">
-                  <div class="col s2">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="https://placehold.co/600x400" alt="Product">
-                      </div>
-                      <div class="card-content">
-                        <p>Arizona Fruit Juice</p>
-                        <p>$2.99</p>
-                      </div>
-                    </div>
-                  </div>                  
-                  <!-- Repeat for 5 items in a set -->
-                </div>
-                <div class="carousel-set">
-                  <div class="col s2">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="https://placehold.co/600x400" alt="Product">
-                      </div>
-                      <div class="card-content">
-                        <p>Arizona Fruit Juice</p>
-                        <p>$2.99</p>
-                      </div>
-                    </div>
-                  </div>                  
-                  <!-- Repeat for 5 items in a set -->
-                </div>
-                <div class="carousel-set">
-                  <div class="col s2">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="https://placehold.co/600x400" alt="Product">
-                      </div>
-                      <div class="card-content">
-                        <p>Arizona Fruit Juice</p>
-                        <p>$2.99</p>
-                      </div>
-                    </div>
-                  </div>                  
-                  <!-- Repeat for 5 items in a set -->
-                </div>
-                
-                <!-- Repeat ends -->
               </div>
+            </div>
+            <div class="col s12 m6 l4 xl3">
+              <div class="card product-card">
+                <div class="card-image product-link cursor">
+                  <img src="/assets/images/prod2.jpg" alt="Arizona Fruit Juice">
+                </div>
+                <div class="card-content">
+                  <span class="product-name product-link cursor">Arizona Fruit Juice</span>
+                  <p class="product-price product-link cursor">$2.99</p>
+                  <!-- Quantity Selector -->
+                  <div class="quantity-selector">
+                    <a class="waves-effect light-green darken-3 btn-small quantity-decrease">-</a>
+                    <input type="text" class="quantity-input" value="1" readonly>
+                    <a class="waves-effect light-green darken-3 btn-small quantity-increase">+</a>
+                  </div>
+                </div>
+                <div class="card-action">
+                  <a class="waves-effect light-green btn-small">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6 l4 xl3">
+              <div class="card product-card">
+                <div class="card-image product-link cursor">
+                  <img src="/assets/images/prod3.jpg" alt="Arizona Fruit Juice">
+                </div>
+                <div class="card-content">
+                  <span class="product-name product-link cursor">Arizona Fruit Juice</span>
+                  <p class="product-price product-link cursor">$2.99</p>
+                  <!-- Quantity Selector -->
+                  <div class="quantity-selector">
+                    <a class="waves-effect light-green darken-3 btn-small quantity-decrease">-</a>
+                    <input type="text" class="quantity-input" value="1" readonly>
+                    <a class="waves-effect light-green darken-3 btn-small quantity-increase">+</a>
+                  </div>
+                </div>
+                <div class="card-action">
+                  <a class="waves-effect light-green btn-small">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6 l4 xl3">
+              <div class="card product-card">
+                <div class="card-image product-link cursor">
+                  <img src="/assets/images/prod4.jpg" alt="Arizona Fruit Juice">
+                </div>
+                <div class="card-content">
+                  <span class="product-name product-link cursor">Arizona Fruit Juice</span>
+                  <p class="product-price product-link cursor">$2.99</p>
+                  <!-- Quantity Selector -->
+                  <div class="quantity-selector">
+                    <a class="waves-effect light-green darken-3 btn-small quantity-decrease">-</a>
+                    <input type="text" class="quantity-input" value="1" readonly>
+                    <a class="waves-effect light-green darken-3 btn-small quantity-increase">+</a>
+                  </div>
+                </div>
+                <div class="card-action">
+                  <a class="waves-effect light-green btn-small">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6 l4 xl3">
+              <div class="card product-card">
+                <div class="card-image product-link cursor">
+                  <img src="/assets/images/prod5.jpg" alt="Arizona Fruit Juice">
+                </div>
+                <div class="card-content">
+                  <span class="product-name product-link cursor">Arizona Fruit Juice</span>
+                  <p class="product-price product-link cursor">$2.99</p>
+                  <!-- Quantity Selector -->
+                  <div class="quantity-selector">
+                    <a class="waves-effect light-green darken-3 btn-small quantity-decrease">-</a>
+                    <input type="text" class="quantity-input" value="1" readonly>
+                    <a class="waves-effect light-green darken-3 btn-small quantity-increase">+</a>
+                  </div>
+                </div>
+                <div class="card-action">
+                  <a class="waves-effect light-green btn-small">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6 l4 xl3">
+              <div class="card product-card">
+                <div class="card-image product-link cursor">
+                  <img src="/assets/images/prod6.jpg" alt="Arizona Fruit Juice">
+                </div>
+                <div class="card-content">
+                  <span class="product-name product-link cursor">Arizona Fruit Juice</span>
+                  <p class="product-price product-link cursor">$2.99</p>
+                  <!-- Quantity Selector -->
+                  <div class="quantity-selector">
+                    <a class="waves-effect light-green darken-3 btn-small quantity-decrease">-</a>
+                    <input type="text" class="quantity-input" value="1" readonly>
+                    <a class="waves-effect light-green darken-3 btn-small quantity-increase">+</a>
+                  </div>
+                </div>
+                <div class="card-action">
+                  <a class="waves-effect light-green btn-small">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6 l4 xl3">
+              <div class="card product-card">
+                <div class="card-image product-link cursor">
+                  <img src="/assets/images/prod7.jpg" alt="Arizona Fruit Juice">
+                </div>
+                <div class="card-content">
+                  <span class="product-name product-link cursor">Arizona Fruit Juice</span>
+                  <p class="product-price product-link cursor">$2.99</p>
+                  <!-- Quantity Selector -->
+                  <div class="quantity-selector">
+                    <a class="waves-effect light-green darken-3 btn-small quantity-decrease">-</a>
+                    <input type="text" class="quantity-input" value="1" readonly>
+                    <a class="waves-effect light-green darken-3 btn-small quantity-increase">+</a>
+                  </div>
+                </div>
+                <div class="card-action">
+                  <a class="waves-effect light-green btn-small">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6 l4 xl3">
+              <div class="card product-card">
+                <div class="card-image product-link cursor">
+                  <img src="/assets/images/prod8.jpg" alt="Arizona Fruit Juice">
+                </div>
+                <div class="card-content">
+                  <span class="product-name product-link cursor">Arizona Fruit Juice</span>
+                  <p class="product-price product-link cursor">$2.99</p>
+                  <!-- Quantity Selector -->
+                  <div class="quantity-selector">
+                    <a class="waves-effect light-green darken-3 btn-small quantity-decrease">-</a>
+                    <input type="text" class="quantity-input" value="1" readonly>
+                    <a class="waves-effect light-green darken-3 btn-small quantity-increase">+</a>
+                  </div>
+                </div>
+                <div class="card-action">
+                  <a class="waves-effect light-green btn-small">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+
             </div>
           </div>
         </div>
-      </div>
     </section>
 
     <section class="location-page hide-all">
       <div class="container store-info">
-        <h3 class="center-align">Visit Our Supermarket!</h3>
+        <h3 class=" header center-align">Visit Our Supermarket!</h3>
         <p class="flow-text">
             Our supermarket is located at the heart of the city, making it accessible to everyone.
             We offer a wide variety of fresh produce, organic products, and daily essentials.
@@ -469,13 +609,13 @@
     <div class="container">
       <div class="row">
         <div class="col l6 s12 ">
-          <h5 class="white-text">Fresh Basket</h5>
+          <h5 class="white-text header2">Fresh Basket</h5>
           <p class="grey-text text-lighten-4">
             Your one-stop shop for fresh produce, quality goods, and all your household needs.
           </p>
         </div>
         <div class="col l4 offset-l2 s12 right-align">
-          <h4 class="white-text">Links</h4>
+          <h4 class="white-text header2">Links</h4>
           <ul>
             <li><a class="grey-text text-lighten-3" href="#!">Products</a></li>
             <li><a class="grey-text text-lighten-3" href="#!">Locations</a></li>

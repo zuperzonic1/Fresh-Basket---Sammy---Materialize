@@ -9,6 +9,8 @@ html {
 
 body {
   background-color: #d4ebd5;
+  font-family: "Public Sans", sans-serif;
+
 
 }
 
@@ -20,6 +22,28 @@ li{
     margin-bottom: 0px; 
 
 }
+/* GLOBAL CLASSES ######################################### */
+
+
+.header {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.header2{
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-family: "Bebas Neue", sans-serif;
+
+}
+
+.subheader{
+  font-size: clamp(.5rem, 1vw, 1rem);
+  font-family: "Archivo", sans-serif;
+}
+
+
+
+
 
 .cursor {
     cursor: pointer;
@@ -161,6 +185,7 @@ ul#nav-mobile.right.hide-on-med-and-down{
 /* Link hover and active styles */
 .nav-wrapper a:hover, .nav-wrapper a.active {
   background-color: #81C784; /* A darker green for hover/active states; adjust the hex as needed */
+  /* padding: 10px; */
 }
 
 /* Mobile sidenav styling */
@@ -190,10 +215,6 @@ ul#nav-mobile.right.hide-on-med-and-down{
   /* Homepage #######################################################################3 */
 
 
-  .custom-title {
-    font-size: clamp(4.5rem, 5vw, 6rem);
-  }
-
   .carousel-item {
     background-size: cover;
     background-position: center;
@@ -209,3 +230,22 @@ ul#nav-mobile.right.hide-on-med-and-down{
     color: #fff; /* Adjust text color for better visibility if needed */
     border-radius: 15px;
   }
+
+
+/* Department page ############################################################################################################################## */
+
+  .quantity-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  .quantity-input {
+    width: 50px;
+    text-align: center;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+  }
+  

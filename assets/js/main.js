@@ -12,26 +12,48 @@ document.addEventListener("DOMContentLoaded", function () {
     indicators: true,
   });
 
-  // Autoplay function
   setInterval(function () {
     var instance = M.Carousel.getInstance(elems[0]);
     instance.next();
   }, 10000);
 });
 
+// Department page Product card, quanitity selector.
 document.addEventListener("DOMContentLoaded", function () {
-  var moveRightButton = document.querySelector(".move-right");
-  var moveLeftButton = document.querySelector(".move-left");
-  var carousel = document.getElementById("custom-carousel");
+  // Quantity Decrease Button
+  var decreaseButtons = document.querySelectorAll(".quantity-decrease");
+  decreaseButtons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var input = this.nextElementSibling;
+      var value = Math.max(Number(input.value) - 1, 1);
+      input.value = value;
+    });
+  });
 
-  moveRightButton.onclick = function () {
-    carousel.scrollBy({ left: carousel.offsetWidth, behavior: "smooth" });
-  };
-
-  moveLeftButton.onclick = function () {
-    carousel.scrollBy({ left: -carousel.offsetWidth, behavior: "smooth" });
-  };
+  // Quantity Increase Button
+  var increaseButtons = document.querySelectorAll(".quantity-increase");
+  increaseButtons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var input = this.previousElementSibling;
+      var value = Number(input.value) + 1;
+      input.value = value;
+    });
+  });
 });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   var moveRightButton = document.querySelector(".move-right");
+//   var moveLeftButton = document.querySelector(".move-left");
+//   var carousel = document.getElementById("custom-carousel");
+
+//   moveRightButton.onclick = function () {
+//     carousel.scrollBy({ left: carousel.offsetWidth, behavior: "smooth" });
+//   };
+
+//   moveLeftButton.onclick = function () {
+//     carousel.scrollBy({ left: -carousel.offsetWidth, behavior: "smooth" });
+//   };
+// });
 
 /* list of our functions here */
 function getHome() {
